@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HolaController {
     @RequestMapping("/")
-
     public String index(@RequestParam(value="name", required=false) String name, String lastname) {
     	
     	if(name == null) {
@@ -16,5 +15,4 @@ public class HolaController {
             return "Hello " + name + " " + lastname + " Welcome to SpringBoot";
     	}
     }
-
 }

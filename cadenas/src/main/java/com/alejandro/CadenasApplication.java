@@ -14,14 +14,14 @@ public class CadenasApplication {
 		SpringApplication.run(CadenasApplication.class, args);
 	}
 	
-	
+	// "/" ES EL HOME DE NUESTRA PAGINA
     @RequestMapping("/")
     public String hello() { // 3
-            return "Hello cliente! How are you doing?";
+            return "Hola cliente, ¿Como estas?";
     }
-    
+    //AL LLAMAR MEDIANTE URL localhost/random nos mostrara esta pagina
     @RequestMapping("/random")
     public String message() { // 3
-            return "Spring Boot is great!";
+            return "Spring Boot es increible!";
     }
 }

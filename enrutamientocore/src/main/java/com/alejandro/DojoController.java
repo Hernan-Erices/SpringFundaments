@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class DojoController {
-	
+
     @RequestMapping("/dojo/{dojo}")
     public String dojo(@PathVariable("dojo") String dojo){
     	return "Dojo: " + dojo;
@@ -21,6 +21,5 @@ public class DojoController {
     public String sanjose(@PathVariable("sanjose") String sanjose){
     	return "Dojo san jose: " + sanjose;
     }
-	
 
 }
